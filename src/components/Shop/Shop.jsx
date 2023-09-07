@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import "./Shop.css"
 import { Col, Container, Row } from 'react-bootstrap';
 import Product from '../Product/Product';
+import Cart from '../Cart/Cart';
 const Shop = () => {
     const [products, setProducts] = useState([])
 
@@ -12,7 +13,7 @@ const Shop = () => {
     }, [])
     return (
         <div className='shop-container'>
-            <Container>
+            <Container fluid>
                 <Row>
                     <Col lg={10}>
                         <div className='products-container'>
@@ -24,15 +25,12 @@ const Shop = () => {
                                     ></Product>)
                                 }
                             </Row>
-
                         </div>
-
                     </Col>
-
 
                     <Col lg={2}>
                         <div className='cart-container'>
-                            <h4>Order Summary</h4>
+                            <Cart></Cart>
                         </div>
 
                     </Col>

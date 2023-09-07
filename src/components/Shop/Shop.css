@@ -1,3 +1,7 @@
-button{
-    border: none;
+.cart-container {
+    background-color: antiquewhite;
+    position: sticky;
+    top: 0;
+    padding: 15px;
+    
 }
