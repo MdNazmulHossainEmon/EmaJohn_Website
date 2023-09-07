@@ -8,6 +8,8 @@ import "./Product.css"
 const Product = (props) => {
     // console.log(props);
     const { id, name, img, price, ratings, seller } = props.product
+
+    const handleAddToCart = props.handleAddToCart
     return (
         <div>
             <Card className='card-item'>
@@ -20,9 +22,14 @@ const Product = (props) => {
                     <p>Ratings: {ratings} Star</p>
 
                 </Card.Body>
-                <Button variant='warning'>
+                <Button
+                    onClick={() => handleAddToCart(props.product)}
+                    variant='warning'
+                >
                     Add To Cart
-                    <span><FontAwesomeIcon icon={faShoppingCart} /></span>
+                    <span>
+                        <FontAwesomeIcon icon={faShoppingCart} />
+                    </span>
                 </Button>
 
             </Card>

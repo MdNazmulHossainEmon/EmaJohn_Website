@@ -4,11 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrash, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import "./Cart.css"
 
-const Cart = () => {
+const Cart = ({cart}) => {
     return (
         <div className='cart'>
             <h4 className='text-center mb-5'>Order Summary</h4>
-            <p>Selected Items: </p>
+            <p>Selected Items: {cart.length} </p>
             <p>Total Price: $ </p>
             <p>Total Shipping Charge: $ </p>
             <p>Tax: $ </p>
