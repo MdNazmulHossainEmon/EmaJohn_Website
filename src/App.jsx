@@ -1,12 +1,12 @@
 import {  } from 'react'
-
 import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <>
-      <h2>App Component</h2>
-       
+       <Header></Header>
     </>
   )
 }
