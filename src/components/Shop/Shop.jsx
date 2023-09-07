@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "./Shop.css"
 import { Col, Container, Row } from 'react-bootstrap';
+import Product from '../Product/Product';
 const Shop = () => {
     const [products, setProducts] = useState([])
 
@@ -16,6 +17,16 @@ const Shop = () => {
                     <Col lg={9}>
                         <div className='products-container'>
                             <h2>Products coming here : {products.length}</h2>
+
+                            <Row lg={3}>
+                                {
+                                    products.map(product => <Product
+                                        key={product.id}
+                                        product={product}
+                                    ></Product>)
+                                }
+                            </Row>
+
                         </div>
 
                     </Col>
