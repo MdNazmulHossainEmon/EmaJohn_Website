@@ -40,7 +40,7 @@ const Shop = () => {
                     <Col lg={2}>
                         <div className='cart-container'>
                             <Cart
-                            cart={cart}
+                                cart={cart}
                             ></Cart>
                         </div>
 

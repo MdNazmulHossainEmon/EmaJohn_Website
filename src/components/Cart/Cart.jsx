@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrash, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import "./Cart.css"
 
-const Cart = ({cart}) => {
+const Cart = ({ cart }) => {
     return (
         <div className='cart'>
             <h4 className='text-center mb-5'>Order Summary</h4>
