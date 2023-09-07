@@ -8,8 +8,8 @@ import "./Header.css"
 
 const Header = () => {
     return (
-        <Navbar className='navbar px-5' expand="lg" >
-            <Container fluid>
+        <Navbar className='navbar ' expand="lg" >
+            <Container>
                 <img src={logo} alt="" />
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">

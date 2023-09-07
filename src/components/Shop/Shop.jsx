@@ -14,10 +14,8 @@ const Shop = () => {
         <div className='shop-container'>
             <Container>
                 <Row>
-                    <Col lg={9}>
+                    <Col lg={10}>
                         <div className='products-container'>
-                            <h2>Products coming here : {products.length}</h2>
-
                             <Row lg={3}>
                                 {
                                     products.map(product => <Product
@@ -32,9 +30,9 @@ const Shop = () => {
                     </Col>
 
 
-                    <Col lg={3}>
+                    <Col lg={2}>
                         <div className='cart-container'>
-                            <h3>Order Summary</h3>
+                            <h4>Order Summary</h4>
                         </div>
 
                     </Col>
